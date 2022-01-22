@@ -1,0 +1,27 @@
+.Pokecard {
+  border: 1px solid #666666;
+  background-color: #d2ffd2;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px 0px 0px 0px;
+  transition: 250ms;
+}
+
+.Pokecard:hover {
+  transform: scale(1.05, 1.05);
+  transition: 250ms;
+}
+
+.Pokecard-props {
+  background: #666666;
+  width: 100%;
+  margin: 0 0 -10px -10px;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+}
+
+.Pokecard-props > p {
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
