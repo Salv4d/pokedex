@@ -22,7 +22,7 @@ class Pokecard extends Component {
           )}.png`}
         />
         <div className="Pokecard-props">
-          <p className="Pokecard-type">Type: {type}</p>
+          <p className="Pokecard-type">Type: {this.capitalize(type)}</p>
           <p className="Pokecard-exp">Exp: {base_experience}</p>
         </div>
       </div>
@@ -31,6 +31,10 @@ class Pokecard extends Component {
 
   normalizeId(id) {
     return String(id).padStart(3, "0");
+  }
+
+  capitalize(word) {
+    return `${word[0].toUpperCase()}${word.slice(1)}`;
   }
 }
 
