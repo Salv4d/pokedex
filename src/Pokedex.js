@@ -26,7 +26,12 @@ class Pokedex extends Component {
         />
       )
     );
-    return <div className="Pokedex">{cards}</div>;
+    return (
+      <div className="Pokedex">
+        <h1>Pokedex</h1>
+        <div className="Pokedex-cards">{cards}</div>
+      </div>
+    );
   }
 }
 
