@@ -30,7 +30,7 @@ class Pokedex extends Component {
     );
     return (
       <div className="Pokedex">
-        <h1>Pokedex</h1>
+        <h1 className="Pokedex-title">Pokedex</h1>
         <div className="Pokedex-cards">{cards}</div>
       </div>
     );
