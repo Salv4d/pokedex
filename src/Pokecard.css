@@ -6,6 +6,7 @@
   border-radius: 15px;
   margin: 20px 0px 0px 0px;
   transition: 250ms;
+  box-shadow: 5px 8px 12px -5px RGBA(0, 0, 0, 0.6);
 }
 
 .Pokecard:hover {
