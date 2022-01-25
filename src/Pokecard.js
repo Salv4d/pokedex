@@ -2,17 +2,11 @@ import { Component } from "react";
 import "./Pokecard.css";
 
 class Pokecard extends Component {
-  static defaultProps = {
-    id: 4,
-    name: "Charmander",
-    type: "fire",
-    base_experience: 62,
-  };
-
   render() {
     const { id, name, type, base_experience, idx } = this.props;
     const POKE_API =
       "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
+
     return (
       <div className="Pokecard" key={idx}>
         <h2 className="Pokecard-name">{name}</h2>
