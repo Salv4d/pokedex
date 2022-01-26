@@ -26,3 +26,13 @@
   align-items: flex-start;
   margin-bottom: 25px;
 }
+
+.Pokedex-winner {
+  color: #008000;
+  margin: 5px;
+}
+
+.Pokedex-loser {
+  color: #ff0000;
+  margin: 5px;
+}

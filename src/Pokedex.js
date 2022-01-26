@@ -15,9 +15,20 @@ class Pokedex extends Component {
         />
       )
     );
+
+    let gameResult;
+
+    if (this.props.isWinner) {
+      gameResult = <h3 className="Pokedex-winner">["Winner!"]</h3>;
+    } else {
+      gameResult = <h3 className="Pokedex-loser">["Loser"]</h3>;
+    }
+
     return (
       <div className="Pokedex">
-        <h1 className="Pokedex-title">Pokedex</h1>
+        <h2 className="Pokedex-title">Pokedex Hand {this.props.hand}</h2>
+        {gameResult}
+        <h4>Total Experience: {this.props.exp}</h4>
         <div className="Pokedex-cards">{cards}</div>
       </div>
     );
